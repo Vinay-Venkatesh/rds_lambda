@@ -1,0 +1,9 @@
+{
+	"role_name": "lambdaRole",
+	"role_policies": [
+		"lambda_policy",
+	   	"lambda_vpc_policy",
+	   	"lambda_cloudwatch_policy"
+	],
+	"service_name":"lambda.amazonaws.com"
+}

@@ -1,0 +1,19 @@
+{
+	"security_groups":[
+		{
+			"from_port": 0,
+			"to_port": 65535,
+			"source_cidr": "172.0.0.0/16",
+			"protocol": "tcp",
+			"description": "to allow all ports"
+		}
+	],
+	"lambdaConfig": [{
+			"function_name": "Hello-world"
+		}
+	],
+	"lambdaTimeout":"15",
+	"lambda_runtime":"Python 3.6",
+	"description":"lambda function for a python application",
+	"codeHandler": "lambda_function.lambda_handler"
+}
